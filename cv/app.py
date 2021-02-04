@@ -97,6 +97,6 @@ if __name__ == "__main__":
             help='Use the embedded streamer instead of connecting to the server.')
     parser.add_argument(
             '--server-addr',  type=str, default='localhost',
-            help='The IP address or hostname of the SocketIO server.')
+            help='The IP address or hostname of the server.')
     args = parser.parse_args()
     main(args.camera, args.use_streamer, args.server_addr)
