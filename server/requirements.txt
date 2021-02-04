@@ -1,1 +1,3 @@
+flask
 imagezmq
+opencv-python
