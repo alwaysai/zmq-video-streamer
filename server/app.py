@@ -20,6 +20,7 @@ def gen_video_feed():
         image = cv2.imencode(
                 '.jpg', image,
                 [int(cv2.IMWRITE_JPEG_QUALITY), 75])[1].tobytes()
+        img_hub.send_reply(b'ok')
         yield (
                 b'--frame\r\n'
                 b'Content-Type: image/jpeg\r\n\r\n' + image + b'\r\n')
@@ -33,7 +34,6 @@ def video():
 
 
 if __name__ == "__main__":
-    print('[INFO] Starting server at http://localhost:5000')
-    app.config['IMAGE_HUB'] = imagezmq.ImageHub(
-            open_port='tcp://127.0.0.1:5001', REQ_REP=False)
-    app.run(host='0.0.0.0', port=5000)
+    print('[INFO] Starting server at http://localhost:5002')
+    app.config['IMAGE_HUB'] = imagezmq.ImageHub()
+    app.run(host='0.0.0.0', port=5002)

@@ -9,14 +9,13 @@ import imagezmq
 class CVClient(object):
     def __init__(self, server_addr):
         self.server_addr = server_addr
-        self.server_port = 5001
+        self.server_port = 5555
 
     def setup(self):
         print('[INFO] Connecting to server tcp://{}:{}...'.format(
             self.server_addr, self.server_port))
         self._sender = imagezmq.ImageSender(
-                connect_to='tcp://{}:{}'.format(self.server_addr, self.server_port),
-                REQ_REP=False)
+                connect_to='tcp://{}:{}'.format(self.server_addr, self.server_port))
         time.sleep(1)
         return self
 
