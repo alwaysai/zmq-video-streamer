@@ -1,5 +1,5 @@
 # ZMQ Video Streamer
-This repo has two parts: an alwaysAI computer vision app which performs realtime object detection and streams video via (ZeroMQ)[https://zeromq.org/languages/python/] to a Flask server, and the server to display the video stream in a browser.
+This repo has two parts: an alwaysAI computer vision app which performs realtime object detection and streams video via [ZeroMQ](https://zeromq.org/languages/python/) to a Flask server, and the server to display the video stream in a browser.
 
 ## Setup
 This app requires an alwaysAI account. Head to the [Sign up page](https://www.alwaysai.co/dashboard) if you don't have an account yet. Follow the instructions to install the alwaysAI toolchain on your development machine.
