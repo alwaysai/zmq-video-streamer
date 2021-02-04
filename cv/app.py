@@ -21,7 +21,7 @@ class CVClient(object):
         return self
 
     def send_data(self, frame, text):
-        self._sender.send_image('test', frame)
+        self._sender.send_image('', frame)
 
     def check_exit(self):
         pass

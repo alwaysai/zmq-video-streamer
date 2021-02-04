@@ -87,6 +87,6 @@ Accelerator: Accelerator.GPU
 Labels:
 ['background', 'aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
 
-[INFO] Connecting to server http://192.168.3.2:5000...
+[INFO] Connecting to server tcp://192.168.3.2:5001...
 [INFO] Successfully connected to server.
 ```
